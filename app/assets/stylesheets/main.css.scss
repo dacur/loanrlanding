@@ -10,20 +10,27 @@ body { width: 100%; height: 100%; background-color: $grey; font-family: 'Open Sa
 
 #topheadline { margin-top: 5%; margin-bottom: 5% }
 
-// #emailbox {width: 40%; margin: 0 auto; padding-top: 2%; min-width: 200px; }
+#emailbox { height: 2.5em;  width: 30%; margin: 0 auto; min-width: 200px; }
 
-#launch { margin-top: 5%; margin-bottom: 10%; }
+#btnSignup {margin: 0 auto; margin-top: 1%; display: block; text-align: center }
+
+#launch { margin-top: 5%; margin-bottom: 5%; }
 
 p#crafted {height: 140%; margin-top: 5%; font-size: 1.2em}
 
 #imagesdiv img { margin-right: 3px; }
 
+h2#firsttouse { margin-bottom: 20px; }
+
 #loanr {font-family: 'Lobster', cursive;}
 
 .glyphicon-transfer {padding-left: 0.5em; padding-right: 0.5em}
 
-#error { display:none; position: fixed; z-index: 999; bottom: -50px; text-align: center; font-size: 18px; width: 100%;  border-top: 1px solid red; background: #990000; padding: 10px 15px; color: #fff; }
-#success { display:none; position: fixed; z-index: 999; bottom: -50px; text-align: center; font-size: 18px; width: 100%; border-top: 2px solid rgba(6,183,31,1); background: rgba(6,183,31,.8); padding: 10px 15px; color: #fff; }
+#error { width: 100%; display:none; position: fixed; z-index: 999; bottom: -50px; text-align: center; font-size: 18px; border-top: 1px solid red; background: #990000; padding: 10px 15px; color: #fff; }
+#success { width: 100%; display:none; position: fixed; z-index: 999; bottom: -50px; text-align: center; font-size: 18px; border-top: 2px solid rgba(6,183,31,1); background: rgba(6,183,31,.8); padding: 10px 15px; color: #fff; }
+
+
+
 
 
 

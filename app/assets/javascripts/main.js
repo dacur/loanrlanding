@@ -1,13 +1,22 @@
 $(document).ready(function(){
-	
+
+	$('#emailbox').keyup(function(e){
+		if (e.keyCode == 13){
+			e.preventDefault();
+			SendSignup();
+		} else {
+			return false;
+		}
+	});
+
 	$('#btnSignup').on('click', function(){
 		SendSignup();
 	});
-	
+
 	function SendSignup(){
 		var email = $('#emailbox').val();
 
-		if (email === "" || !ValidateEmail){
+		if (email === "" || !ValidateEmail(email)){
 			ShowError('Please enter a valid email address!');
 			$('#emailbox').focus();
 			return;
@@ -75,3 +84,4 @@ $(document).ready(function(){
 	}
 
 });
+

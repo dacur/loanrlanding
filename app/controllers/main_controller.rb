@@ -1,6 +1,6 @@
 class MainController < ApplicationController
   def index
-  	@users = User.all
+  	# @users = User.all
   end
 
   def savesignup
