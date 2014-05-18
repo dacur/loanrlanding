@@ -8,11 +8,13 @@ class MainController < ApplicationController
 
   	u = User.new(email: email)
 
-  	u.save
-
-  	render json: u
-
-  	head :ok
+    if (u.valid?)
+  	  u.save
+    	render json: u
+     	head :ok
+    else
+      render json: nil
+    end
 
   end
 
